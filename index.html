@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>OnlineShop</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+    </style>
+    <header>      
+        <div class="logo">
+            <h1 >T<span class="text-logo">echno</span></h1>
+        </div>
+        <div class="search">
+            <input class="search-input"; type="text"; placeholder="Поиск">
+            <i class='bx bx-sm bx-search-alt-2 loupe' ></i>
+        </div>       
+        <div class="icon-button">
+            <a class="heart"; href="#">
+                <i class='bx bx-sm bx-tada-hover bx-heart' ></i>
+            </a>
+            <a href="#">
+                <i class='bx bx-sm bx-cart'></i>
+            </a>
+            <a href="#">
+                <i class='bx bx-sm bx-user'></i>
+            </a>
+    </div>
+    </header>
+    <main>
+        <div class="sort">
+            <a class="sort-button" href="#">Пример</a> 
+            <a class="sort-button" href="#">Пример</a> 
+            <a class="sort-button" href="#">Пример</a> 
+            <a class="sort-button" href="#">Пример</a> 
+        </div>
+        <div class="grid-card" id="grid-card">
+            <script>                    
+                const grid = document.getElementById("grid-card");
+
+                getCardsDataFromApi(grid);
+                
+                
+                /*for(let i = 1; i<=10; i++){               
+                    const card = document.createElement('shop-card');                   
+                    grid.append(card);             
+                }*/
+            </script>
+        </div>
+        <!-- <script>
+            const images = document.images;
+            for(img of images){
+                console.log(`Url: "${img.src}" alt:"${img.alt}"`);
+            }
+           const par = document.getElementsByTagName("p");
+           for(p of par)
+           {
+            console.log(p.innerText);
+           }
+        </script>-->
+    </main>
+</body>
+</html>
